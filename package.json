@@ -1,0 +1,23 @@
+{
+  "name": "simplenodjsapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesKirkAndSpock/simplenodjsapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesKirkAndSpock/simplenodjsapp/issues"
+  },
+  "homepage": "https://github.com/JamesKirkAndSpock/simplenodjsapp#readme",
+  "devDependencies": {
+    "mocha": "^8.4.0"
+  }
+}
