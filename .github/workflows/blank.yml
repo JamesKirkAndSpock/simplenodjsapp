@@ -23,7 +23,17 @@ jobs:
     strategy:
       matrix:
         node-version: [10.x, 12.x, 14.x]
-
+        os: [macos-latest, windows-latest, ubuntu-latest]
+        include:
+          - os: windows-latest
+            node: 4
+            npm: 2
+          - node: 13
+            os: ubuntu-18.04
+            experimental: true
+        exclude:
+          - os: macos-latest
+            node: 10
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
