@@ -16,10 +16,10 @@ jobs:
             os: ubuntu-18.04
             experimental: true
             
-      steps:
-        - uses: actions/checkout@v2
-        - name: Use node js ${{ matrix.node }}
-          uses: actions/setup-node@v1
-          with:
-            node-version: ${{ matrix.node }}
-        - run: npm test
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use node js ${{ matrix.node }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      - run: npm test
