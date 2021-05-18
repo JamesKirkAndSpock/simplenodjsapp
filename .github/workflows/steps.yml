@@ -33,3 +33,8 @@ jobs:
       - name: third step
         if: failure()
         run: echo "Failure on second step"
+      - name: my third step
+        uses: actions/checkout@v1
+        with:
+          node-version: 12
+          registry-url: https://npm.pkg.github.com/
