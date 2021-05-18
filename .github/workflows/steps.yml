@@ -27,3 +27,9 @@ jobs:
           echo $FIRST_NAME
           echo $MIDDLE_NAME
           echo $LAST_NAME
+      - name: second step
+        if: success()
+        run: echo "The previous job has run successfully"
+      - name: third step
+        if: failure()
+        run: echo "Failure on second step"
